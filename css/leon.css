@@ -336,9 +336,10 @@ body {
  }
 
  .about .about-content .image{
+    
     position: relative;
-    width: 300px;
-    height: 375px;
+    width: 320px;
+    height: 350px;
  }
  @media (max-width: 991px){
     .about .about-content .image{
@@ -347,6 +348,7 @@ body {
  }
  .about .about-content .image img{
     width: 100%;
+    z-index: 3;
  }
  .about .about-content .image::before{
     content: "";
@@ -372,7 +374,7 @@ body {
     opacity: 0.8;
  }
  @media (max-width: 991px){
-    .about .about-content .image::before,.about .about-content .image::after{
+    .about .about-content .image::before, .about .about-content .image::after{
         display: none;
     }
  }
