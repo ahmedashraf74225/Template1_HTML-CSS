@@ -336,13 +336,12 @@ body {
  }
 
  .about .about-content .image{
-    
     position: relative;
     width: 250px;
     height: 350px;
  }
  @media (max-width: 991px){
-    .about .about-content .image{
+    .about .about-content .image img{
        margin: 0px auto 20px;
      }
  }
@@ -362,9 +361,9 @@ body {
     opacity: 0.6;
  }
  .about .about-content .image::after{
+    content: "";
     top: -40px;
     right: -147px;
-    content: "";
     position: absolute;
     width: 120px;
     height: 242px;
